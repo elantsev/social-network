@@ -11,12 +11,12 @@ const MyPosts = props => {
         <button>Add post</button>
       </div>
       <div className={s.posts}>
-        <Post message="I am first post" />
+        <Post message="I am first post" likesCount="5" />
         <Post />
         <Post />
         <Post />
         <Post />
-        <Post message="Hi" />
+        <Post message="Hi" likesCount="13" />
       </div>
     </div>
   );
