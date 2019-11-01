@@ -12,10 +12,6 @@ const MyPosts = props => {
       </div>
       <div className={s.posts}>
         <Post message="I am first post" likesCount="5" />
-        <Post />
-        <Post />
-        <Post />
-        <Post />
         <Post message="Hi" likesCount="13" />
       </div>
     </div>
