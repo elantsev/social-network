@@ -6,15 +6,21 @@ import Profile from "./components/Profile/Profile.jsx";
 import Dialogs from "./components/Dialogs/Dialogs";
 import { Route, Switch } from "react-router-dom";
 
-function App({ posts }) {
+function App(props) {
   return (
     <div className="app-wrapper">
       <Header />
       <Navbar />
       <div className="app-wrapper-conten">
         <Switch>
-          <Route path="/profile" render={() => <Profile posts={posts} />} />
-          <Route path="/dialogs" render={() => <Dialogs />} />
+          <Route
+            path="/dialogs"
+            render={() => <Dialogs state={props.state.dialogsPage} />}
+          />
+          <Route
+            path="/profile"
+            render={() => <Profile state={props.state.profilePage} />}
+          />
         </Switch>
       </div>
     </div>
