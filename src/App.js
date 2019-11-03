@@ -13,8 +13,8 @@ function App() {
       <Navbar />
       <div className="app-wrapper-conten">
         <Switch>
-          <Route path="/profile" component={Profile} />
-          <Route path="/dialogs" component={Dialogs} />
+          <Route path="/profile" render={() => <Profile />} />
+          <Route path="/dialogs" render={() => <Dialogs />} />
         </Switch>
       </div>
     </div>
