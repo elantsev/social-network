@@ -11,7 +11,7 @@ function App(props) {
     <div className="app-wrapper">
       <Header />
       <Navbar />
-      <div className="app-wrapper-conten">
+      <div className="app-wrapper-content">
         <Switch>
           <Route
             path="/dialogs"
@@ -19,7 +19,12 @@ function App(props) {
           />
           <Route
             path="/profile"
-            render={() => <Profile state={props.state.profilePage} />}
+            render={() => (
+              <Profile
+                state={props.state.profilePage}
+                addPost={props.addPost}
+              />
+            )}
           />
         </Switch>
       </div>
