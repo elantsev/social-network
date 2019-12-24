@@ -6,6 +6,7 @@ import { setUserProfile } from "../../redux/profile-reducer";
 import { withRouter } from 'react-router-dom';
 
 
+
 class ProfileContainer extends React.Component {
 
     componentDidMount () {
