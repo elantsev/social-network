@@ -10,7 +10,7 @@ import Preloader from "../common/Preloader";
 import { compose } from "redux";
 import {
   getCurrentPage,
-  getFollowingInProgress,
+  getFollowingInProgress, 
   getIsFetching,
   getPageSize,
   getTotalUsersCount,
