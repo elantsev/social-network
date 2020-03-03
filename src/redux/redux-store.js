@@ -14,7 +14,7 @@ let reducers = combineReducers({
   sidebar: sidebarReducer,
   usersPage: usersReducer,
   auth: authReducer,
-  form: formReducer,
+  form: formReducer, 
   app: appReducer
 });
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -23,3 +23,4 @@ let store = createStore(reducers, composeEnhancers(applyMiddleware(thunkMiddlewa
 window.__store__ = store;
 
 export default store;
+ 
